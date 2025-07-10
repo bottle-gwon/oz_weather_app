@@ -1,3 +1,14 @@
+# 실행 방법
+
+1. 루트 폴더에 .env 생성하기
+2. https://openweathermap.org/ 에서 api 키 받아오기
+3. .env 안에 VITE_API_WEATHER_API_KEY = "api키" 입력
+4. 터미널에 다음 명령어 입력
+```
+npm run dev
+```
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
