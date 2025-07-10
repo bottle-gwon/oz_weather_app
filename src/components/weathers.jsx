@@ -25,7 +25,6 @@ const Weathers = () =>{
     const [error, setError] = useState(null);
     const [weather, setWeather] = useState([]);
     useLocationCall({setPosition, setError})
-    console.log(position)
 
     useEffect(() => {
         if(position){
@@ -40,12 +39,6 @@ const Weathers = () =>{
 
     },[position])
 
-    console.log(weather);
-    
-
-   
-
-    // console.log(useCurrentWeather(useLocationCall().position.latitude,useLocationCall().position.longitude))
     return (
         <Main>
             <h2>
