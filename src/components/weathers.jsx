@@ -27,7 +27,7 @@ const Weathers = () =>{
     useLocationCall({setPosition, setError})
 
     useEffect(() => {
-        if(position){
+        if(position && error === null){
             fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${position.latitude}&lon=${position.longitude}&units=metric&lang=kr&appid=${import.meta.env.VITE_API_WEATHER_API_KEY}`)
             .then((res)=>res.json())
             .then((res)=>{
