@@ -6,12 +6,14 @@ import styled from "styled-components";
 const Main = styled.main`
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
+    height: 80vh;
+    h2{
+        text-align: center;
+    }
 `;
 
 const CardList = styled.div`
-    margin-top: 300px;
   display: flex;
   justify-content: space-around;
 
@@ -47,7 +49,7 @@ const Weathers = () =>{
     return (
         <Main>
             <h2>
-                현재 날씨
+                5일간의 날씨
             </h2>
         <CardList >
             {weather.map((el)=>
